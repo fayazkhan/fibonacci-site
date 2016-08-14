@@ -5,6 +5,8 @@ function calculate() {
     if (n == '') {
         alert("Enter a number");
     } else {
+        document.getElementById("result").innerHTML = "Result:";
+        document.getElementById("time").innerHTML = "Time taken:";
         $.ajax({
             type: "GET",
             url: "calculate/" + dataString,
