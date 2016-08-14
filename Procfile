@@ -1,1 +1,1 @@
-web: gunicorn fibonacci/fibonacci/wsgi.py --log-file - --log-level debug
+web: gunicorn fibonacci/fibonacci/wsgi:application --log-file - --log-level debug
