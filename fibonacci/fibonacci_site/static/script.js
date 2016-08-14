@@ -10,7 +10,6 @@ function calculate() {
         $.ajax({
             type: "GET",
             url: "calculate/" + dataString,
-            cache: false,
             success: function(response) {
                 var end = performance.now();
                 var time = end - start;
