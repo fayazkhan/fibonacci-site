@@ -10,3 +10,8 @@ class FibonacciTestCase(TestCase):
         c = Client()
         response = c.get('/')
         self.assertEqual(response.status_code, 200)
+
+    def test_calculate(self):
+        c = Client()
+        response = c.get('/calculate/', {'n': 6})
+        self.assertEqual(response.content, '8')
